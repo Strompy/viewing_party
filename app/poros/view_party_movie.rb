@@ -4,5 +4,4 @@ class ViewPartyMovie
     @title = title
     @runtime = runtime
   end
-
-end 
+end
