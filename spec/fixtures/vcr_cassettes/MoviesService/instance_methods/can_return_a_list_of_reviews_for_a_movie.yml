@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Thu, 27 Aug 2020 20:59:35 GMT
+      - Sat, 05 Sep 2020 16:51:51 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -38,32 +38,28 @@ http_interactions:
       Cache-Control:
       - public, max-age=21600
       X-Memc:
-      - HIT
+      - MISS, STORE
       X-Memc-Key:
       - e25f3547e1df5d0850d6acb576f5666f
       X-Memc-Age:
-      - '2439'
+      - '0'
       X-Memc-Expires:
-      - '19161'
-      Etag:
-      - W/"26661db59b01883e65759c3d4dfad771"
+      - '21600'
       Last-Modified:
-      - Thu, 27 Aug 2020 20:59:35 GMT
+      - '2020-08-16 22:50:57 +0000'
       Vary:
       - Accept-Encoding
       X-Cache:
-      - Hit from cloudfront
+      - Miss from cloudfront
       Via:
-      - 1.1 94bd5e4f47540501369a53d4ae35d3b3.cloudfront.net (CloudFront)
+      - 1.1 8bd27032f0d38908fbe32b696e45c288.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - JthejGLLFVxSSMQ4CsBvwR2wYvUYodEdrYDEajpRcScmf0qrxbwLQQ==
-      Age:
-      - '383'
+      - tI1SXrSFEb0hRvf8PxmHRq_f740H1tLy_zAErvOTcrjfh6HE5vzxOg==
     body:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpZCI6MzkzLCJwYWdlIjoxLCJyZXN1bHRzIjpbeyJhdXRob3IiOiJXdWNoYWsiLCJjb250ZW50IjoiVGFyYW50aW5vJ3MgYW11c2luZyBzdXBlci1hc3Nhc3NpbiBiaXphcnJvIHdvcmxkICBcclxuXHJcblJFTEVBU0VEIElOIDIwMDQgYW5kIHdyaXR0ZW4vZGlyZWN0ZWQgYnkgUXVlbnRpbiBUYXJhbnRpbm8sIFwiS2lsbCBCaWxsIFZvbC4gMlwiIGNvbXBsZXRlcyB0aGUgc3Rvcnkgb2YgMjAwMydzIFwiVm9sLiAxXCIgYW5kIGZpbGxzIGluIHRoZSBob2xlcy4gRm9ybWVyIGFzc2Fzc2luLCBUaGUgQnJpZGUgKFVtYSBUaHVybW9uKSwgc2Vla3MgdmVuZ2VhbmNlIGFmdGVyIHRoZSBtdXJkZXIgb2YgaGVyIGZpYW5jw6kgJiBmcmllbmRzIGF0IGEgd2VkZGluZyByZWhlYXJzYWwgaW4gRWwgUGFzby4gU2hlIHRha2VzIG9uIGZvcm1pZGFibGUgdGh1Z3MgQnVkZCAoTWljaGFlbCBNYWRzZW4pIGFuZCBFbGxlIChEYXJ5bCBIYW5uYWgpIHRvIGZpbmFsbHkgZ2V0IHRvIHJpbmdsZWFkZXIgQmlsbCAoRGF2aWQgQ2FycmFkaW5lKS4gR29yZG9uIExpdSBwbGF5cyBtYXN0ZXIgbWFydGlhbCBhcnRpc3QgUGFpIE1laSB3aGlsZSBNaWNoYWVsIFBhcmtzIGlzIG9uIGhhbmQgYXMgRXN0ZWJhbiBWaWhhaW8uXHJcblxyXG5UaGlzIHBhcnQgb2YgdGhlIGR1b2xvZ3kgaXMgbW9yZSBkaWFsb2d1ZS1kcml2ZW4gdGhhbiBcIlZvbC4gMSzigJ0gZmxlc2hpbmctb3V0IHRoZSBjaGFyYWN0ZXJzIGFuZCBhbnN3ZXJpbmcgbWFueSBxdWVzdGlvbnMuIFN1Y2ggYXM6IEhvdyBpcyBUaGUgQnJpZGUgc3VjaCBhbiB1bmNvbnF1ZXJhYmxlIGZpZ2h0ZXI/IEhvdyBkaWQgRWxsZSBsb3NlIGhlciByaWdodCBleWU/IFdoeSBkaWQgQmlsbCBjb25kdWN0IHRoZSB3ZWRkaW5nIG1hc3NhY3JlPyBIb3cgZG9lcyBCdWRkIHNwZW5kIGhpcyByZXRpcmVtZW50PyBUaGUgcHJvYmxlbSBpcyB0aGF0IHRoZSBjaGFyYWN0ZXJzIGFyZSBhbGwgY2FydG9vbnkgY2FyaWNhdHVyZXMsIGFuZCBtZXJjaWxlc3MgYXNzYXNzaW5zIHRvIGJvb3QuIEl0J3MgaW1wb3NzaWJsZSB0byBnaXZlIGNyaW1pbmFsIHNjdW0gXCJtb3JlIGRlcHRoLFwiIGF0IGxlYXN0IGFzIGZhciBhcyBjYXJpbmcgZm9yIHRoZW0gZ29lcy4gTGV0ICdlbSBhbGwga2lsbCBlYWNoIG90aGVyIGZvciBhbGwgSSBjYXJlLiBNb3Jlb3ZlciwgdGhlIHN0b3J5IGlzIHRvbyBzaGFsbG93IHRvIHdhcnJhbnQgc3VjaCBlcGljIHRyZWF0bWVudCBhbmQgd291bGQndmUgYmVlbiBtb3JlIGVmZmVjdGl2ZSBpZiBib3RoIGZpbG1zIHdlcmUgY29uZGVuc2VkIGludG8gYSAyLjUgaG91ciBmbGljaywgY3V0dGluZyBvdXQgdGhlIGZhdC5cclxuXHJcblN0aWxsLCB0aGUgbW92aWUncyBzbyBvZmZiZWF0IHRoYXQgaXQncyBlbnRlcnRhaW5pbmcgaW4gdGhlIG1hbm5lciBvZiAxOTk2J3MgXCJNb2phdmUgTW9vbixcIiBidXQgYmV0dGVyLiBJdCdzIGFuIGludGVyZXN0aW5nIGNvbWJvIG9mIHNwYWdoZXR0aSBXZXN0ZXJucywgNzAncyBtYXJ0aWFsIGFydHMgZmxpY2tzLCBCb25kLWlzbXMgYW5kIGFsbC1hcm91bmQgVGFyYW50aW5vIHF1aXJraW5lc3MuIEJ1dCBzdWdnZXN0aW5nIHRoYXQgdGhlIFwiS2lsbCBCaWxsXCIgZmxpY2tzIGFyZSBjaW5lbWF0aWMgbWFzdGVycGllY2VzIG9mIGF1dGV1cmlzbSBpcyBvdmVyZG9pbmcgaXQuIFRha2UsIGZvciBpbnN0YW5jZSwgdGhlIHJpZGljdWxvdXMgY2xvc2luZyBjcmVkaXRzLCB3aGljaCBydW4gd2VsbCBvdmVyIDEyIG1pbnV0ZXM6IFRoZSBwbG90IGFuZCBjaGFyYWN0ZXJzIGFyZSB1bndvcnRoeSBvZiBzdWNoIHByZXRlbnRpb3VzIHZlbmVyYXRpb24uIElmIHlvdSB3YW50IG1hc3RlcndvcmtzIGJ5IFRhcmFudGlubywgc2VlIOKAnERqYW5nbyBVbmNoYWluZWTigJ0gKDIwMTIpIGFuZCDigJxQdWxwIEZpY3Rpb27igJ0gKDE5OTQpOyBvciBldmVuIOKAnEluZ2xvdXJpb3VzIEJhc3RlcmRz4oCdICgyMDA5KSBhbmQg4oCcSmFja2llIEJyb3du4oCdICgxOTk3KS5cclxuXHJcblN0aWxsLCB0aGUgbW92aWUncyBzdHJhbmdlbHkgYW11c2luZywgdGhlIGNhc3QgaXMgZ29vZCAoZXNwZWNpYWxseSBDYXJyYWRpbmUpIGFuZCBCaWxsJ3MgU3VwZXJtYW4gYW5hbHlzaXMgaXMgaW5zaWdodGZ1bC4gVGhlIEJyaWRl4oCZcyB0cmFpbmluZyB3aXRoIFBhaSBNZWkgaXMgYXJndWFibHkgdGhlIGJlc3QgYml0LlxyXG5cclxuVEhFIE1PVklFIFJVTlMgMTM3IG1pbnV0ZXMgYW5kIHdhcyBzaG90IGluIFNvdXRoZXJuIENhbGlmb3JuaWE7IEJlaWppbmcsIENoaW5hOyBhbmQgTWV4aWNvLlxyXG5cclxuR1JBREU6IEIvQi0gKDYuNS8xMCkiLCJpZCI6IjViNTBlOTA5MGUwYTI2MjU5NDAwMjg0NyIsInVybCI6Imh0dHBzOi8vd3d3LnRoZW1vdmllZGIub3JnL3Jldmlldy81YjUwZTkwOTBlMGEyNjI1OTQwMDI4NDcifV0sInRvdGFsX3BhZ2VzIjoxLCJ0b3RhbF9yZXN1bHRzIjoxfQ==
-  recorded_at: Thu, 27 Aug 2020 21:05:58 GMT
+  recorded_at: Sat, 05 Sep 2020 16:51:51 GMT
 recorded_with: VCR 6.0.0

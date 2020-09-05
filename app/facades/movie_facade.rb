@@ -1,7 +1,9 @@
 class MovieFacade
+  attr_reader :keyword, :movies
   def initialize(keyword = nil)
     @keyword = keyword
     @movie_service = MoviesService.new
+    @movies = movie_search(keyword)
   end
 
   def movie_result(id)
@@ -15,11 +17,13 @@ class MovieFacade
     reviews_info.map { |review| FilmReview.new(review) }
   end 
 
-  def movies(keyword)
+  def movie_search(keyword)
     if keyword.blank?
-      movies = @movie_service.top40    
+      @movies = @movie_service.top40
+      movies.map { |info| MovieIndexObject.new(info) }
     else
-      movies = @movie_service.search(@keyword)
+      movies = @movie_service.search(keyword)
+      movies.map { |info| MovieIndexObject.new(info) }
     end
   end 
 end 

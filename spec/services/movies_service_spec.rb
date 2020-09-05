@@ -10,13 +10,11 @@ RSpec.describe MoviesService do
     it "can return the top rated 40 films" do
 
       blockbusters = @service.top40
-
+      
       expect(@service).to be_a(MoviesService)
       expect(blockbusters.count).to eq(40)
-      expect(blockbusters.first).to be_a(MovieIndexObject)
-      expect(blockbusters.first.title).to be_a(String)
-      expect(blockbusters.first.vote_average).to be_a(Float)
-
+      expect(blockbusters.first[:title]).to be_a(String)
+      expect(blockbusters.first[:vote_average]).to be_a(Float)
     end
 
     it "can return film_info" do

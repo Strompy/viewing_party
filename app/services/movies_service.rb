@@ -7,7 +7,7 @@ class MoviesService
     get_json('/3/movie/top_rated?page=2')[:results].each do |movie|
       acc << movie
     end
-    acc.map { |info| MovieIndexObject.new(info) }
+    acc
   end
 
   def film_info(id)
@@ -32,7 +32,7 @@ class MoviesService
         acc << movie
       end
     end
-    acc.map { |info| MovieIndexObject.new(info) }
+    acc 
   end
 
   private

@@ -7,8 +7,8 @@
 <%= submit_tag "Find Movies" %>
 <% end %>
 </section><br>
-<% if @keyword %>
-  <h1> Films related to <%= @keyword %> </h1>
+<% if @movies.keyword %>
+  <h1> Films related to <%= @movies.keyword %> </h1>
 <% else %>
   <h1>40 Top Rated Movies of All Time</h1>
 <% end  %>
@@ -18,7 +18,7 @@
   <th>Title</th>
   <th>Vote Average</th>
 </tr>
-  <% @movies.each do |movie| %>
+  <% @movies.movies.each do |movie| %>
     <tr class="movie">
       <td class="title"><%= link_to movie.title, "/movies/#{movie.id}" %></td>
       <td class="vote-average">Vote Average: <%= movie.vote_average %></td>
