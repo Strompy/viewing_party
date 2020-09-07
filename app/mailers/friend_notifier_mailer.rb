@@ -9,7 +9,7 @@ class FriendNotifierMailer < ApplicationMailer
       reply_to: @sender.email,
       to: recipient,
       subject: "#{@sender.username} is inviting you to a movie viewing party",
-      from: ENV['FROM_EMAIL']
+      from: 'josh.tukman@gmail.com'
       
     )
   end
