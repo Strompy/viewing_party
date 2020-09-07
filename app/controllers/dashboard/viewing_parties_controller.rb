@@ -20,7 +20,7 @@ class Dashboard::ViewingPartiesController < Dashboard::BaseController
     )
     friends.each do |friend|
       party.users << friend
-      # friend.email_user(party, current_user)
+      friend.email_user(party, current_user)
     end
     client = CalendarService.new.create_google_client(current_user)
     event = CalendarService.new.create_event(party, current_user)
