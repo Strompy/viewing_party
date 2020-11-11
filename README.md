@@ -2,6 +2,7 @@
 
 This is the base repo for the viewing party project used for Turing's Backend Module 3.
 
+Check out the deployed site on [Heroku](https://ps-jt-viewing-party.herokuapp.com/)
 
 ### About this Project
 
