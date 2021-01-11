@@ -10,11 +10,10 @@ Rails.application.routes.draw do
 
   namespace :dashboard do
     get '/', to: 'users#show'
-    get '/discover', to: 'discover#index'
-    post '/friendships', to: 'friendships#create'
-    get '/viewing_parties/new', to: 'viewing_parties#new'
-    post '/viewing_parties', to: 'viewing_parties#create'
-    post '/calendar', to: 'calendar#create'
+    resources :discover, only: [:index]
+    resources :friendships, only: [:create]
+    resources :viewing_parties, only: [:show, :new, :create]
+    resources :calendar, only: [:create]
   end
 
 end

@@ -3,6 +3,10 @@ require 'google/apis/calendar_v3'
 require 'google/api_client/client_secrets.rb'
 
 class Dashboard::ViewingPartiesController < Dashboard::BaseController
+  def show
+    @view_party = ViewParty.find(params[:id])
+  end
+
   def new
     title = params[:title]
     runtime = params[:runtime]

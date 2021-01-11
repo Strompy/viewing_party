@@ -40,6 +40,7 @@
           <li><%= guest.user.username %></li>
           <% end %>
         </ul>
+        <%= button_to "Party Details", dashboard_viewing_party_path(party.id), method: :get %>
         <% unless party.attending?(current_user) %>
           <%= button_to "Add to Google Calendar", "/dashboard/calendar?party=#{party.id}"  %>
         <% end %>
